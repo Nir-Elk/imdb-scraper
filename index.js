@@ -16,11 +16,6 @@ const movies = [];
 (async () => {
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
-    await page.tracing.start({
-        path: 'trace.json',
-        categories: ['devtools.timeline']
-    })
-
     await page.goto(Url(search)).catch(err=>{
         console.warn(err)
         process.exit(-1);
@@ -55,7 +50,6 @@ const movies = [];
     await Promise.all(promises).then(async (values) => {
         console.log(Date.now() - start);
         console.log('done!');
-        await page.tracing.stop()
         await browser.close()
         process.exit(1);
     });
