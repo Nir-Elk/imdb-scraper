@@ -29,7 +29,7 @@ Process will be end with exit code 1 for success or exit code -1 for failure
 In case of fail the error will be console logged to in your std
 ```
 
-## Output example for quering ""
+## Output example for quering "star trek"
 Each line is in the shape of:
 ```
 #any varablie can by an empty string, indicates the field is not avalible on IMDB
