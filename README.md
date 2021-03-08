@@ -8,7 +8,7 @@ Use the package manager [npm](https://www.npmjs.com) which coming a part of [nod
 ## Installation
 ```bash
 git clone https://github.com/Nir-Elk/imdb-scraper.git
-cd projectName # Or your picked procjet directoy name
+cd imdb-scraper # Or your picked procjet directoy name
 npm install
 ```
 
